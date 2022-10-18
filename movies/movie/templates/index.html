@@ -8,6 +8,20 @@
 </head>
 <body>
     Peliculas
+    <hr>
+    <h1>Pelicula</h1>
+    <hr>
+    {% for movie in movies %}
+        {{movie.nombre }} -- {{movie.comentario}} <hr>
+    {% endfor %}
+    <br><br>
+    <hr>
+    <h1>Directores</h1>
+    <hr>
     
+    {% for Director in Directores %}
+        {{Director.nombre}} -- {{Director.apellido}} <br>
+    {% endfor %}
+
 </body>
 </html>

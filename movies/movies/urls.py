@@ -16,9 +16,10 @@ Including another URLconf
 from turtle import home
 from django.contrib import admin
 from django.urls import path
-from movie.views import home
+from movie.views import home, add
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home),
+    path('agregar/', add)
 ]
