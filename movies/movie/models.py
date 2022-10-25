@@ -6,6 +6,7 @@ class Movie(models.Model):
     nombre = models.CharField(max_length=100)
     comentarios = models.TextField()
     imdb = models.IntegerField(default=1)
+    Director = models.ForeignKey()
     
     def __str__(self):
         return self.nombre
